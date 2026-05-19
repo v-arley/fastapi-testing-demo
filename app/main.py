@@ -2,7 +2,7 @@
 from fastapi import FastAPI, HTTPException, Depends
 from app.models import NoteCreate, NoteResponse
 from app.database import Database, db
-from app.services import calculate_note_priority, validate_color
+from app.service import calculate_note_priority, validate_color
 
 app = FastAPI(title="Notes API")
 
